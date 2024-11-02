@@ -5,7 +5,7 @@ import com.jme3.math.Vector3f;
 
 /**
  * Notifies the user of grid change events, such as moving to new grid cells.
- * @author Anthyon
+ * 
  */
 public interface TerrainGridListener {
 

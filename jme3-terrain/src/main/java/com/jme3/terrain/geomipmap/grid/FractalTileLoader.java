@@ -15,7 +15,7 @@ import java.nio.FloatBuffer;
 
 /**
  *
- * @author Anthyon, normenhansen
+ * , normenhansen
  */
 public class FractalTileLoader implements TerrainGridTileLoader{
             

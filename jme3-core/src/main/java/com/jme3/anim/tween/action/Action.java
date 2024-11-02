@@ -8,15 +8,11 @@ import com.jme3.util.clone.JmeCloneable;
 
 /**
  * Wraps an array of Tween actions into an action object.
- * 
  * <p>
  * Notes :
- * <li> The sequence of tweens is determined by {@link com.jme3.anim.tween.Tweens} utility class and the {@link BaseAction} interpolates that sequence. </li>
- * <li> This implementation mimics the {@link com.jme3.anim.tween.AbstractTween}, but it delegates the interpolation method {@link Tween#interpolate(double)}
- * to the {@link BlendableAction} class. </li>
- * </p>
- * 
- * Created by Nehon.
+ * 1- The sequence of tweens is determined by {@link com.jme3.anim.tween.Tweens} utility class and the {@link BaseAction} interpolates that sequence.
+ * 2- This implementation mimics the {@link com.jme3.anim.tween.AbstractTween}, but it delegates the interpolation method {@link Tween#interpolate(double)}
+ * to the {@link BlendableAction} class.
  *
  * @see BlendableAction
  * @see BaseAction
@@ -36,10 +32,9 @@ public abstract class Action implements JmeCloneable, Tween {
      * Instantiates an action object that wraps a tween actions array by extracting their actions to the collection {@link Action#actions}.
      * <p>
      * Notes :
-     * <li> If intentions are to wrap some tween actions, then subclasses have to call this constructor, examples : {@link BlendableAction} and {@link BlendAction}. </li>
-     * <li> If intentions are to make an implementation of {@link Action} that shouldn't wrap tweens of actions, then subclasses shouldn't call this
-     * constructor, examples : {@link ClipAction} and {@link BaseAction}. </li>
-     * </p> 
+     * 1- If intentions are to wrap some tween actions, then subclasses have to call this constructor, examples : {@link BlendableAction} and {@link BlendAction}.
+     * 2- If intentions are to make an implementation of {@link Action} that shouldn't wrap tweens of actions, then subclasses shouldn't call this
+     * constructor, examples : {@link ClipAction} and {@link BaseAction}.
      *
      * @param tweens the tween actions to be wrapped (not null).
      */    

@@ -5,7 +5,7 @@ import com.jme3.math.Vector3f;
 
 /**
  *
- * @author Anthyon
+ * 
  * @deprecated in favor of TerrainGridTileLoader
  */
 @Deprecated

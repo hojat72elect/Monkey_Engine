@@ -17,7 +17,7 @@ import java.util.logging.Logger;
 
 /**
  *
- * @author Anthyon, normenhansen
+ * , normenhansen
  */
 public class ImageTileLoader implements TerrainGridTileLoader{
     private static final Logger logger = Logger.getLogger(ImageTileLoader.class.getName());

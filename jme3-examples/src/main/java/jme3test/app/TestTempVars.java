@@ -18,15 +18,6 @@ public class TestTempVars {
             System.gc();
         }
         
-//        sumCompute.set(0, 0, 0);
-//        long nanos = System.nanoTime();
-//        for (int i = 0; i < ITERATIONS; i++) {
-//            recursiveMethod(0);
-//        }
-//        long milliseconds = (System.nanoTime() - nanos) / NANOS_TO_MS;
-//        System.out.println("100 million TempVars calls with 5 recursions: " + milliseconds + " ms");
-//        System.out.println(sumCompute);
-        
         sumCompute.set(0, 0, 0);
         nanos = System.nanoTime();
         for (int i = 0; i < ITERATIONS; i++) {

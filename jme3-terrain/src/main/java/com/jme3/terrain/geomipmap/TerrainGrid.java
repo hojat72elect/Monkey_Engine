@@ -75,7 +75,7 @@ import java.util.logging.Logger;
  * These allow physics to update, and other operation (often needed for loading the terrain) to occur
  * at the right time.
  * </p>
- * @author Anthyon
+ * 
  */
 public class TerrainGrid extends TerrainQuad {
     protected static final Logger log = Logger.getLogger(TerrainGrid.class.getCanonicalName());
